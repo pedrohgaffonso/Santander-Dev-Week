@@ -4,7 +4,7 @@ import org.springframework.boot.autoconfigure.amqp.RabbitProperties.ContainerTyp
 
 public class Correntistas {
     private Integer id;
-    private Strimg cpf;
+    private String cpf;
     private String nome;
 
     private Conta conta;
@@ -21,10 +21,10 @@ public class Correntistas {
     public void setId(Integer id) {
         this.id = id;
     }
-    public Strimg getCpf() {
+    public String getCpf() {
         return cpf;
     }
-    public void setCpf(Strimg cpf) {
+    public void setCpf(String cpf) {
         this.cpf = cpf;
     }
     public String getNome() {
