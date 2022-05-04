@@ -8,8 +8,6 @@ import javax.persistence.Table;
 import javax.persistence.Column;
 import javax.persistence.Embedded;
 
-import org.springframework.boot.autoconfigure.amqp.RabbitProperties.ContainerType;
-
 @Entity
 @Table(name = "tab_correntista")
 
