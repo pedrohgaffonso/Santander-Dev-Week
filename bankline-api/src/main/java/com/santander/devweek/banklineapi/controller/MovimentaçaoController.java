@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -33,5 +34,9 @@ public class MovimentaçaoController {
 	@PostMapping
 	public void save(@RequestBody NovaMovimentaçao movimentaçao) {
 		service.save(movimentaçao);
+	}
+	@GetMapping("/{idConta}")
+	public List<Movimentaçao> findAll(@PathVariable("idConta") Integer idConta){
+		return repository.findByIdConta(idConta);
 	}
 }

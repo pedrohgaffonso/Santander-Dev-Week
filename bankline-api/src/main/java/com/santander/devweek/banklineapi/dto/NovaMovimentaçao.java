@@ -3,17 +3,17 @@ package com.santander.devweek.banklineapi.dto;
 import com.santander.devweek.banklineapi.model.MovimentaçaoTipo;
 
 public class NovaMovimentaçao {
-    private String descriçao;
+    private String descricao;
     
     private Double valor;
     
 
-    public String getDescriçao() {
-		return descriçao;
+    public String getDescricao() {
+		return descricao;
 	}
 
-	public void setDescriçao(String descriçao) {
-		this.descriçao = descriçao;
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
 	}
 
 	public Double getValor() {

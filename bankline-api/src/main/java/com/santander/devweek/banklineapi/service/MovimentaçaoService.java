@@ -30,8 +30,8 @@ public class MovimentaçaoService {
 		if(novaMovimentacao.getTipo() == MovimentaçaoTipo.DESPESA)
 			valor = valor * -1;
 			
-		movimentacao.setDatehora(LocalDateTime.now());
-		movimentacao.setDescriçao(novaMovimentacao.getDescriçao());
+		movimentacao.setDataHora(LocalDateTime.now());
+		movimentacao.setDescricao(novaMovimentacao.getDescricao());
 		movimentacao.setIdConta(novaMovimentacao.getIdConta());
 		movimentacao.setTipo(novaMovimentacao.getTipo());
 		movimentacao.setValor(valor);
